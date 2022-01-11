@@ -1,8 +1,7 @@
 <h1 align="center">Tastebook - Project 3</h1>
 
 <p align="center">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="600">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="600">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="500"><img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="500">
 </p>
 
 ## Table of Contents:
@@ -122,19 +121,19 @@ yarn start
 Once we agreed on the initial idea of the app, we wrote down the features we wanted to implement, planned the back-end and the front-end accordingly and looked for design inspiration by visiting the most popular recipe apps.
 We have decided to implement three models - recipe, user and comments, and embedded relationships for recipe likes and average rating,and user liked and created recipes. As soon as we had a clear plan for the back-end we agreed on the front-end features and layout, we created wireframes and worked on task division using Asana to help reach our goals in time.
 
-### Wireframe
-
+#### Wireframe
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641908924/github/Blank_diagram_uzsif0.png" width="800">
 
 We have agreed to do group coding taking turns for back-end implementation and split front-end implementation into tasks assigned in advance. As a group we set out our working hours and scheduled daily stand ups to review the progress, wins and any potential blockers through Zoom and Slack. Stand up time was also used to merge work onto GitHub and resolve any conflicts arising.
 
+#### Project Plan and task division (Asana)
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641909121/github/Screenshot_2022-01-11_at_13.51.31_gxitdr.png" width="800">
 
 ### Day 2-3 - Back-end
 
 First of all we have created a recipe model to include desired fields and defined the type of input for each field. Same approach was taken to define comments and user models. Knowing the features we were looking to implement, we have established embedded and virtual relationships under recipe schema to display comments, number of likes and average rating, while virtual relationships under user model were created to display user created, liked and rated recipes.
 
-### Code Snippet - Models and virtual relationships implemented
+#### Code Snippet - Models and virtual relationships implemented
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898132/github/tastebook_6_v3vmpo.png" width="400">  <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898137/github/tastebook_5_bk6xpx.png" width="400">
 
 Once models and relationships were defined, we have moved onto CRUD functionality, authorisation and router implementation with secure routes for editing, creating, liking, deleting and rating of recipes. We used Insomnia to test back-end and see if embedded and virtual schema's were populated with the correct information.
@@ -157,12 +156,14 @@ Certain features such as recipe editing and an option to delete a recipe were se
 
 I used React rating stars component to allow users rate recipes in the scale from 1 to 5, when logged in. Stars highlight in yellow when hovered over to display the rating given. Feature was set up to request users to submit a comment in order to rate recipes and vice versa. Code included error handling.
 
+#### Code Snippet - Rating and review component
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_8_crbksl.png" height="250"> <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_9_pcmlbo.png" height="250">
 
 ### Database seeding
 
 In order to save time when seeding the app database and avoid the option of adding recipes one by one, I have used a publicly accessible database to extract recipes in the format set out under recipe schema. To do so, I have written a python script that takes in the data from downloaded dataSet.csv file and dumps the information in recipes.json file in the defined format. Since some fields such as cookTime, prepTime, difficulty and others were not defined in the public database but were set as mandatory in our recipe schema, I have used a random selection of options provided to generate the information. Once recipes were extracted, information dumped in recipes.json file was copied over to the seeds file to seed our database, giving the app a complete look.
 
+#### Code Snippet - Recipe mapper written and used to extract recipes in the format defined
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641899401/github/Screenshot_2022-01-11_at_11.09.16_u4jumm.png" height="500">
 
 ### Day 8 - Styling
