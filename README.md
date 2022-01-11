@@ -1,8 +1,8 @@
 <h1 align="center">Tastebook - Project 3</h1>
 
 <p align="center">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="600">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="600">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="500">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="500">
 </p>
 
 ## Table of Contents:
@@ -122,7 +122,7 @@ We have decided to implement three models - recipe, user and comments, and embed
 
 Wireframe:
 
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837265/tastebook_3_qutg4w.png" width="=1200">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837265/tastebook_3_qutg4w.png" width="=1500">
 
 We have agreed to do group coding taking turns for back-end implementation and split front-end implementation into tasks assigned in advance. As a group we set out our working hours and scheduled daily stand ups to review the progress, wins and any potential blockers through Zoom and Slack. Stand up time was also used to merge work onto GitHub and resolve any conflicts arising.
 
