@@ -1,8 +1,8 @@
 <h1 align="center">Tastebook - Project 3</h1>
 
 <p align="center">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="500">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="500">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="600">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="600">
 </p>
 
 ## Table of Contents:
@@ -87,18 +87,20 @@ yarn start
 
 ## Technologies used
 
-- Back-end:
+### Back-end:
   - Node.js
   - Mongodb
   - Mongoose
   - Express
   - Bcrypt
   - JWT
-- Frontend:
+  
+ ### Frontend:
   - React.js
   - Axios
   - SCSS
-- Development tools:
+  
+### Development tools:
   - VS code
   - Yarn
   - Insomnia
@@ -120,19 +122,20 @@ yarn start
 Once we agreed on the initial idea of the app, we wrote down the features we wanted to implement, planned the back-end and the front-end accordingly and looked for design inspiration by visiting the most popular recipe apps.
 We have decided to implement three models - recipe, user and comments, and embedded relationships for recipe likes and average rating,and user liked and created recipes. As soon as we had a clear plan for the back-end we agreed on the front-end features and layout, we created wireframes and worked on task division using Asana to help reach our goals in time.
 
-Wireframe:
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641903118/github/Blank_diagram_uzsif0.png" width="=600">
+### Wireframe
+
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641908924/github/Blank_diagram_uzsif0.png" width="800">
 
 We have agreed to do group coding taking turns for back-end implementation and split front-end implementation into tasks assigned in advance. As a group we set out our working hours and scheduled daily stand ups to review the progress, wins and any potential blockers through Zoom and Slack. Stand up time was also used to merge work onto GitHub and resolve any conflicts arising.
 
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_4_ol7ain.png" width="700">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641909121/github/Screenshot_2022-01-11_at_13.51.31_gxitdr.png" width="800">
 
 ### Day 2-3 - Back-end
 
 First of all we have created a recipe model to include desired fields and defined the type of input for each field. Same approach was taken to define comments and user models. Knowing the features we were looking to implement, we have established embedded and virtual relationships under recipe schema to display comments, number of likes and average rating, while virtual relationships under user model were created to display user created, liked and rated recipes.
 
-<p><img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898132/github/tastebook_6_v3vmpo.png" height="500">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898137/github/tastebook_5_bk6xpx.png" height="250"></p>
+### Code Snippet - Models and virtual relationships implemented
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898132/github/tastebook_6_v3vmpo.png" width="400">  <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898137/github/tastebook_5_bk6xpx.png" width="400">
 
 Once models and relationships were defined, we have moved onto CRUD functionality, authorisation and router implementation with secure routes for editing, creating, liking, deleting and rating of recipes. We used Insomnia to test back-end and see if embedded and virtual schema's were populated with the correct information.
 
@@ -150,14 +153,11 @@ Axios was used for API requests to fetch recipes and generate a list by mapping 
 React useEffect and useState hooks were used to fetch, set and display recipe information such as ingredients, method, reviews, number of likes, average rating etc. Since each step of the recipe method as well as each ingredient is added as a list item in the array, I have displayed it using map operator.
 Certain features such as recipe editing and an option to delete a recipe were set up to only be displayed if the user is logged in and is the owner of the recipe in order to protect recipe owner posts and the app content as a whole.
 
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898132/github/tastebook_7_h6eq0l.png" height="350">
-
 ### Comments and rating
 
 I used React rating stars component to allow users rate recipes in the scale from 1 to 5, when logged in. Stars highlight in yellow when hovered over to display the rating given. Feature was set up to request users to submit a comment in order to rate recipes and vice versa. Code included error handling.
 
-<p><img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_8_crbksl.png" height="250">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_9_pcmlbo.png" height="250"></p>
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_8_crbksl.png" height="250"> <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_9_pcmlbo.png" height="250">
 
 ### Database seeding
 
