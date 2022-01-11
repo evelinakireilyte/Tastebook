@@ -121,8 +121,7 @@ Once we agreed on the initial idea of the app, we wrote down the features we wan
 We have decided to implement three models - recipe, user and comments, and embedded relationships for recipe likes and average rating,and user liked and created recipes. As soon as we had a clear plan for the back-end we agreed on the front-end features and layout, we created wireframes and worked on task division using Asana to help reach our goals in time.
 
 Wireframe:
-
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641903118/github/Blank_diagram_uzsif0.png" width="=700">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641903118/github/Blank_diagram_uzsif0.png" width="=600">
 
 We have agreed to do group coding taking turns for back-end implementation and split front-end implementation into tasks assigned in advance. As a group we set out our working hours and scheduled daily stand ups to review the progress, wins and any potential blockers through Zoom and Slack. Stand up time was also used to merge work onto GitHub and resolve any conflicts arising.
 
