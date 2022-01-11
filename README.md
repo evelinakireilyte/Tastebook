@@ -1,8 +1,8 @@
 <h1 align="center">Tastebook - Project 3</h1>
 
 <p align="center">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="400">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="400">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_1_sozy68.png" height="600">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837266/tastebook_2_q2kqe7.png" height="600">
 </p>
 
 ## Table of Contents:
@@ -121,6 +121,7 @@ Once we agreed on the initial idea of the app, we wrote down the features we wan
 We have decided to implement three models - recipe, user and comments, and embedded relationships for recipe likes and average rating,and user liked and created recipes. As soon as we had a clear plan for the back-end we agreed on the front-end features and layout, we created wireframes and worked on task division using Asana to help reach our goals in time.
 
 Wireframe:
+
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641837265/tastebook_3_qutg4w.png" width="=1200">
 
 We have agreed to do group coding taking turns for back-end implementation and split front-end implementation into tasks assigned in advance. As a group we set out our working hours and scheduled daily stand ups to review the progress, wins and any potential blockers through Zoom and Slack. Stand up time was also used to merge work onto GitHub and resolve any conflicts arising.
@@ -131,8 +132,8 @@ We have agreed to do group coding taking turns for back-end implementation and s
 
 First of all we have created a recipe model to include desired fields and defined the type of input for each field. Same approach was taken to define comments and user models. Knowing the features we were looking to implement, we have established embedded and virtual relationships under recipe schema to display comments, number of likes and average rating, while virtual relationships under user model were created to display user created, liked and rated recipes.
 
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898132/github/tastebook_6_v3vmpo.png" height="500">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898137/github/tastebook_5_bk6xpx.png" height="250">
+<p><img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898132/github/tastebook_6_v3vmpo.png" height="500">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898137/github/tastebook_5_bk6xpx.png" height="250"></p>
 
 Once models and relationships were defined, we have moved onto CRUD functionality, authorisation and router implementation with secure routes for editing, creating, liking, deleting and rating of recipes. We used Insomnia to test back-end and see if embedded and virtual schema's were populated with the correct information.
 
@@ -156,8 +157,8 @@ Certain features such as recipe editing and an option to delete a recipe were se
 
 I used React rating stars component to allow users rate recipes in the scale from 1 to 5, when logged in. Stars highlight in yellow when hovered over to display the rating given. Feature was set up to request users to submit a comment in order to rate recipes and vice versa. Code included error handling.
 
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_8_crbksl.png" height="250">
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_9_pcmlbo.png" height="250">
+<p><img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_8_crbksl.png" height="250">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_9_pcmlbo.png" height="250"></p>
 
 ### Database seeding
 
