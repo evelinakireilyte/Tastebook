@@ -20,7 +20,7 @@
 
 ## Project Overview
 
-Tastebook is a full stack application, built in 8 days as part of a group project during Software Engineering Immersive course. It is a complex MERN stack recipe app, allowing registered users to share, edit, review, like, comment and rate recipes.
+Tastebook - my third project - is a full stack application that was built in collaboration with [Milobedini](https://github.com/milobedini) and [Yin-wai Tse](https://github.com/yin-wai) in 8 days as part of a group project during Software Engineering Immersive course. It is a complex MERN (MongoDB, Express, React and Node) stack recipe app, allowing registered users to share, edit, review, like, comment and rate recipes.
 
 ## Deployment
 
@@ -77,18 +77,18 @@ yarn start
 
 ## Project Brief
 
-- Build a full stack MERN based application in a group of 3 in 8 days
-- Use an Express API to serve data from MongoDB
-- Build a front-end with React to consume our own built API
-- Create multiple relationships and CRUD functionality
-- Create wireframes to help with project design and features
+- Build a full stack MERN based application in a group of 3 in 8 days.
+- Use an Express API to serve data from MongoDB.
+- Build a front-end with React to consume our own built API.
+- Create multiple relationships and CRUD functionality.
+- Create wireframes to help with project design and features.
 - Deploy the project so it's publicly accessible.
 
 ## Technologies used
 
 ### Back-end:
   - Node.js
-  - Mongodb
+  - MongoDB
   - Mongoose
   - Express
   - Bcrypt
@@ -103,7 +103,7 @@ yarn start
   - VS code
   - Yarn
   - Insomnia
-  - Git + Github
+  - Git + GitHub
   - Heroku (deployment)
   - Asana (planning and timeline)
 
@@ -131,12 +131,12 @@ We have agreed to do group coding taking turns for back-end implementation and s
 
 ### Day 2-3 - Back-end
 
-First of all we have created a recipe model to include desired fields and defined the type of input for each field. Same approach was taken to define comments and user models. Knowing the features we were looking to implement, we have established embedded and virtual relationships under recipe schema to display comments, number of likes and average rating, while virtual relationships under user model were created to display user created, liked and rated recipes.
+First of all we have created a recipe model to include desired fields and defined the type of input for each field. The same approach was taken to define comments and user models. Knowing the features we were looking to implement, we have established embedded and virtual relationships under recipe schema to display comments, number of likes and average rating, while virtual relationships under user model were created to display user created, liked and rated recipes.
 
 #### Code Snippet - Models and virtual relationships implemented
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898132/github/tastebook_6_v3vmpo.png" width="400">  <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898137/github/tastebook_5_bk6xpx.png" width="400">
 
-Once models and relationships were defined, we have moved onto CRUD functionality, authorisation and router implementation with secure routes for editing, creating, liking, deleting and rating of recipes. We used Insomnia to test back-end and see if embedded and virtual schema's were populated with the correct information.
+Once models and relationships were defined, we have moved onto CRUD functionality, authorisation and router implementation with secure routes for editing, creating, liking, deleting and rating of recipes. We used Insomnia to test the back-end and see if embedded and virtual schema's were populated with the correct information.
 
 ### Day 3-7 - Front-end
 
@@ -154,14 +154,14 @@ Certain features such as recipe editing and an option to delete a recipe were se
 
 ### Comments and rating
 
-I used React rating stars component to allow users rate recipes in the scale from 1 to 5, when logged in. Stars highlight in yellow when hovered over to display the rating given. Feature was set up to request users to submit a comment in order to rate recipes and vice versa. Code included error handling.
+I used the React rating stars component to allow users rate recipes in the scale from 1 to 5, when logged in. Stars highlight in yellow when hovered over to display the rating given. Feature was set up to request users to submit a comment in order to rate recipes and vice versa. Code included error handling.
 
 #### Code Snippet - Rating and review component
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_8_crbksl.png" height="250"> <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641898131/github/tastebook_9_pcmlbo.png" height="250">
 
 ### Database seeding
 
-In order to save time when seeding the app database and avoid the option of adding recipes one by one, I have used a publicly accessible database to extract recipes in the format set out under recipe schema. To do so, I have written a python script that takes in the data from downloaded dataSet.csv file and dumps the information in recipes.json file in the defined format. Since some fields such as cookTime, prepTime, difficulty and others were not defined in the public database but were set as mandatory in our recipe schema, I have used a random selection of options provided to generate the information. Once recipes were extracted, information dumped in recipes.json file was copied over to the seeds file to seed our database, giving the app a complete look.
+In order to save time when seeding the app database and avoid the option of adding recipes one by one, I have used a publicly accessible database to extract recipes in the format set out under recipe schema. To do so, I have written a Python script that takes in the data from downloaded dataSet.csv file and dumps the information in recipes.json file in the defined format. Since some fields such as cookTime, prepTime, difficulty and others were not defined in the public database but were set as mandatory in our recipe schema, I have used a random selection of options provided to generate the information. Once recipes were extracted, information dumped in recipes.json file was copied over to the seeds file to seed our database, giving the app a complete look.
 
 #### Code Snippet - Recipe mapper written and used to extract recipes in the format defined
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641899401/github/Screenshot_2022-01-11_at_11.09.16_u4jumm.png" height="500">
